@@ -1,0 +1,72 @@
+/* 기본 변수 설정 */
+:root {
+    --primary-color: #0d2e44ef; /* 로고에서 추출한 파란색 */
+    --secondary-color: #ffffff; /* 흰색 */
+    --text-color: #333333; /* 어두운 회색 텍스트 */
+    --font-family: 'Montserrat', sans-serif; /* 여기에 글꼴 설정 추가 */
+}
+
+/* 전역 스타일 */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+/* 컨테이너 및 네비게이션 스타일 */
+.container, .nav-link {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* 헤더 및 타이틀 스타일 */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+/* 버튼 및 인터랙티브 요소 스타일 */
+button, .btn, .nav-link:hover, .nav-link-selected {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* 버튼 호버 효과 */
+button:hover, .btn:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+
+/* 사이드바 스타일 */
+.sidebar {
+    background-color: #0e3950; /* 예시로 조정한 값 */
+}
+
+/* 기타 요소 스타일 */
+.card, .alert, .badge {
+    background-color: #115a82; /* 예시로 조정한 값 */
+    color: var(--secondary-color);
+}
+
+/* 사이드바 로고 이미지 스타일 */
+img.sidebar-logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 메인 페이지 이미지 스타일 */
+img.mainpage-image {
+    display: block;
+    max-width: 80%;
+    min-width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
